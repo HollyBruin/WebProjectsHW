@@ -1,0 +1,92 @@
+body{
+	padding-top:55px;
+	font-family: 'Raleway', sans-serif;
+	backgorund-color:#f2f2f2;
+}
+.hakkimda {
+	background-color: #f2f2f2;
+}
+.img-fluid {
+	max-width: 20%; and height: auto;
+	backgorund-color: #f2f2f2;
+	border-color:#f2f2f2;
+	border:none;
+}
+head{
+	backgorund-color: #f2f2f2;
+}
+.ayrac {
+	border:none;
+	border-top:solid 3px  #1c1c1c;
+	max-width:250px;
+	margin:25px auto;
+}
+.ibeyaz{
+	color:343a40;
+	position:relative;
+	top:-55px;
+	font-size:40px;
+	border:10px solid white;
+	background-color: white;
+}
+.igri{
+	color:343a40;
+	position:relative;
+	top:-55px;
+	font-size:40px;
+	border:10px solid #f2f2f2;
+	background-color: #f2f2f2;
+}
+.resimCarousel{
+	height:600px;
+	width:%100;
+	backgorund-color:white;
+	margin: auto;
+}
+.resimCarouselgayret{
+	height:auto;
+	width:900px;
+	margin:auto;
+}
+.yazistyle{
+	color:white;
+	font-size:50px;
+	vertical-align:top;
+}
+.hakkimdayazi{
+	font-size:20px;
+}
+.alanaciklama{
+	font-size:25px;
+}
+.carouselButton{
+	border:none;
+	padding:0px 0px;
+	margin:-80px -100px;
+	height:600px;
+}
+.alanaciklama{
+	font-size:28px;
+	text
+}
+.kspbutton{
+	height:50px;
+	width:200px;
+	margin:auto;
+	position:relative;
+	bottom:-50px;
+	border:none;
+}
+.kspimg{
+	padding:0px 0px;
+	border:none;
+	height:100px;
+	height:100px;
+	position:relative;
+	top:-55px;
+}
+.kocaeliyazi{
+	position:realtive;
+	top:-25px;
+	font-size:17px;
+}
