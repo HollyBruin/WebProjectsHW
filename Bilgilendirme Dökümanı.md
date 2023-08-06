@@ -15,3 +15,6 @@ Web sitesinin içeriği hakkındaki bilgilendirme proje ilerledikçe bu döküma
           -->style.css dosyasında bazı classların stilleri yapıldı.
           -->NAVBAR kısmında yer alan linkler adreslendi.
 ---------------------------------------------------------------------------------------------------------------------
+06.08.2023-->Kocaelispor sayfası tamamlandı.
+          -->Tasarım.css isimli style dosyası eklendi.
+---------------------------------------------------------------------------------------------------------------------
