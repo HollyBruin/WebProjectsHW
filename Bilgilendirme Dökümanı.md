@@ -18,3 +18,7 @@ Web sitesinin içeriği hakkındaki bilgilendirme proje ilerledikçe bu döküma
 06.08.2023-->Kocaelispor sayfası tamamlandı.
           -->Tasarım.css isimli style dosyası eklendi.
 ---------------------------------------------------------------------------------------------------------------------
+07.08.2023-->İletişim sayfası tamamlandı.
+          -->Özgeçmiş sayfası tamamlandı.
+          -->Node.js ile form kontrolleri yapıldı.
+---------------------------------------------------------------------------------------------------------------------
