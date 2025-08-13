@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETSEO - Dijital Pazarlama ve Reklam Ajansı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'helvetica': ['Helvetica', 'Arial', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#3A3088',
+                        'secondary': '#646FD1',
+                        'tertiary': '#764BA2',
+                        'quaternary': '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-helvetica { font-family: 'Helvetica', Arial, sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .logo-slider {
+            animation: slide 30s linear infinite;
+        }
+        
+        .logo-slider:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <!-- Hero Area -->
+    <section class="relative min-h-screen bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="font-helvetica text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Dijital Dünyada<br>
+                <span class="text-secondary">Öne Çıkın</span>
+            </h1>
+            <p class="font-roboto text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
+                AI destekli yeni nesil dijital pazarlama ve reklam çözümleriyle markanızı dijital dünyada zirveye taşıyoruz.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-secondary hover:bg-opacity-90 text-white font-roboto font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+                    Bizimle İletişime Geçin
+                </button>
+                <button class="bg-white hover:bg-gray-100 text-primary font-roboto font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+                    Teklif Alın
+                </button>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Neden NETSEO -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-8">
+                        Neden NETSEO?
+                    </h2>
+                    <div class="space-y-6 text-gray-700 font-roboto text-lg leading-relaxed">
+                        <p>
+                            <strong class="text-primary">10+ yıllık deneyimimiz</strong> ile dijital pazarlama dünyasında güvenilir bir partner olarak hizmet veriyoruz. AI teknolojilerini kullanarak geleneksel pazarlama yöntemlerini yenilikçi çözümlerle birleştiriyoruz.
+                        </p>
+                        <p>
+                            <strong class="text-primary">%95 müşteri memnuniyeti</strong> oranımız ve <strong class="text-primary">500+ başarılı proje</strong> ile sektörde öncü konumdayız. Her projede özel stratejiler geliştirerek müşterilerimizin hedeflerine ulaşmasını sağlıyoruz.
+                        </p>
+                        <p>
+                            SEO, sosyal medya yönetimi, reklam yönetimi ve web tasarım alanlarında <strong class="text-primary">kapsamlı hizmetler</strong> sunarak markanızın dijital varlığını güçlendiriyoruz.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 h-96 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <i class="fas fa-image text-6xl mb-4 opacity-50"></i>
+                        <p class="font-roboto text-lg">Resim Alanı</p>
+                        <p class="text-sm opacity-75">Resim buraya yüklenecek</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetlerimiz -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Hizmetlerimiz
+                </h2>
+                <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+                    Dijital başarınız için ihtiyacınız olan tüm hizmetleri tek çatı altında sunuyoruz
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- SEO -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-primary mb-4">SEO</h3>
+                    <p class="font-roboto text-gray-600 leading-relaxed">
+                        Arama motorlarında üst sıralarda yer almanız için kapsamlı SEO stratejileri geliştiriyoruz. Yerel, ulusal ve uluslararası SEO çözümlerimizle organik trafiğinizi artırıyoruz.
+                    </p>
+                </div>
+
+                <!-- Logo ve Kurumsal Kimlik -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-secondary to-tertiary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-primary mb-4">Logo & Kurumsal Kimlik</h3>
+                    <p class="font-roboto text-gray-600 leading-relaxed">
+                        Markanızın kimliğini yansıtan profesyonel logo tasarımları ve kurumsal kimlik paketleri hazırlıyoruz. Tutarlı ve akılda kalıcı görsel kimlik oluşturuyoruz.
+                    </p>
+                </div>
+
+                <!-- Kurumsal Web Site Tasarımı -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-tertiary to-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-primary mb-4">Kurumsal Web Site Tasarımı</h3>
+                    <p class="font-roboto text-gray-600 leading-relaxed">
+                        Modern, responsive ve kullanıcı dostu kurumsal web siteleri tasarlıyoruz. Hız optimizasyonu ve çok dilli site yönetimi ile global erişim sağlıyoruz.
+                    </p>
+                </div>
+
+                <!-- E-Ticaret Hizmetleri -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shopping-cart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-primary mb-4">E-Ticaret Hizmetleri</h3>
+                    <p class="font-roboto text-gray-600 leading-relaxed">
+                        Online satış platformlarınızı kuruyor ve optimize ediyoruz. Güvenli ödeme sistemleri, stok yönetimi ve müşteri deneyimi odaklı e-ticaret çözümleri sunuyoruz.
+                    </p>
+                </div>
+
+                <!-- Google ADS ve META Reklam Yönetimi -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-secondary to-tertiary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-ad text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-primary mb-4">Google ADS & META Reklam Yönetimi</h3>
+                    <p class="font-roboto text-gray-600 leading-relaxed">
+                        Google Ads, Facebook ve Instagram reklamlarınızı profesyonel olarak yönetiyoruz. Hedef kitle analizi ve performans optimizasyonu ile maksimum ROI elde ediyoruz.
+                    </p>
+                </div>
+
+                <!-- Sosyal Medya Yönetimi -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="bg-gradient-to-br from-tertiary to-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-share-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-primary mb-4">Sosyal Medya Yönetimi</h3>
+                    <p class="font-roboto text-gray-600 leading-relaxed">
+                        Tüm sosyal medya platformlarında markanızın varlığını güçlendiriyoruz. İçerik üretimi, topluluk yönetimi ve etkileşim artırma stratejileri uyguluyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nasıl Çalışıyoruz -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Nasıl Çalışıyoruz?
+                </h2>
+                <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+                    6 adımlık sistematik yaklaşımımızla projelerinizi başarıya ulaştırıyoruz
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Bağlantı çizgisi -->
+                <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-tertiary transform -translate-y-1/2 z-0"></div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                    <!-- Adım 1 -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-primary to-secondary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <span class="font-helvetica text-white text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-4">Analiz & Araştırma</h3>
+                        <p class="font-roboto text-gray-600">
+                            Mevcut durumunuzu analiz ediyor, rakiplerinizi inceliyor ve hedef kitlenizi belirliyoruz.
+                        </p>
+                    </div>
+
+                    <!-- Adım 2 -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-secondary to-tertiary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <span class="font-helvetica text-white text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-4">Strateji Geliştirme</h3>
+                        <p class="font-roboto text-gray-600">
+                            Hedeflerinize uygun kapsamlı dijital pazarlama stratejisi oluşturuyoruz.
+                        </p>
+                    </div>
+
+                    <!-- Adım 3 -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-tertiary to-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <span class="font-helvetica text-white text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-4">Tasarım & Uygulama</h3>
+                        <p class="font-roboto text-gray-600">
+                            Stratejinizi hayata geçiriyor, tasarım ve teknik uygulamaları gerçekleştiriyoruz.
+                        </p>
+                    </div>
+
+                    <!-- Adım 4 -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-primary to-secondary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <span class="font-helvetica text-white text-2xl font-bold">4</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-4">Test & Optimizasyon</h3>
+                        <p class="font-roboto text-gray-600">
+                            Performans testleri yapıyor, sürekli optimizasyon ile en iyi sonuçları elde ediyoruz.
+                        </p>
+                    </div>
+
+                    <!-- Adım 5 -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-secondary to-tertiary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <span class="font-helvetica text-white text-2xl font-bold">5</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-4">Lansman & İzleme</h3>
+                        <p class="font-roboto text-gray-600">
+                            Projelerinizi hayata geçiriyor ve performansını sürekli izliyoruz.
+                        </p>
+                    </div>
+
+                    <!-- Adım 6 -->
+                    <div class="text-center">
+                        <div class="bg-gradient-to-br from-tertiary to-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <span class="font-helvetica text-white text-2xl font-bold">6</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-4">Sürekli Destek</h3>
+                        <p class="font-roboto text-gray-600">
+                            Projenizin başarısı için sürekli destek ve güncelleme hizmetleri sunuyoruz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yapay Zeka ve Mühendislik Çözümlerimiz -->
+    <section class="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-white mb-6">
+                    Yapay Zeka ve Mühendislik Çözümlerimiz
+                </h2>
+                <p class="font-roboto text-xl text-white opacity-90 max-w-3xl mx-auto">
+                    Geleceğin teknolojilerini bugün kullanarak rekabette öne geçin
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- YZ Destekli SEO -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-white mb-4">YZ Destekli SEO</h3>
+                    <p class="font-roboto text-white opacity-90 leading-relaxed">
+                        Yapay zeka algoritmaları ile anahtar kelime analizi, içerik optimizasyonu ve rakip analizi yaparak SEO performansınızı maksimize ediyoruz.
+                    </p>
+                </div>
+
+                <!-- YZ İçerik Üretimi -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-fancy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-white mb-4">YZ İçerik Üretimi</h3>
+                    <p class="font-roboto text-white opacity-90 leading-relaxed">
+                        AI destekli içerik üretim araçları ile SEO uyumlu, özgün ve etkileyici içerikler oluşturuyoruz.
+                    </p>
+                </div>
+
+                <!-- Otomasyon ve ERP Çözümleri -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-white mb-4">Otomasyon ve ERP Çözümleri</h3>
+                    <p class="font-roboto text-white opacity-90 leading-relaxed">
+                        İş süreçlerinizi otomatikleştiren ve verimliliği artıran ERP sistemleri kuruyoruz.
+                    </p>
+                </div>
+
+                <!-- Otomatik Raporlama -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-white mb-4">Otomatik Raporlama</h3>
+                    <p class="font-roboto text-white opacity-90 leading-relaxed">
+                        Performans metriklerinizi otomatik olarak takip eden ve detaylı raporlar sunan sistemler geliştiriyoruz.
+                    </p>
+                </div>
+
+                <!-- YZ Destekli Görsel ve Video Üretimi -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-white mb-4">YZ Destekli Görsel ve Video Üretimi</h3>
+                    <p class="font-roboto text-white opacity-90 leading-relaxed">
+                        AI teknolojileri ile profesyonel görseller, animasyonlar ve video içerikler üretiyoruz.
+                    </p>
+                </div>
+
+                <!-- YZ Destekli Reklam ve Sosyal Medya Yönetimi -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-helvetica text-2xl font-bold text-white mb-4">YZ Destekli Reklam ve Sosyal Medya Yönetimi</h3>
+                    <p class="font-roboto text-white opacity-90 leading-relaxed">
+                        Yapay zeka ile reklam kampanyalarınızı optimize ediyor ve sosyal medya stratejilerinizi geliştiriyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kullandığımız Uygulamalar -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Kullandığımız Uygulamalar
+                </h2>
+                <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+                    En güncel teknolojiler ve araçlarla hizmet veriyoruz
+                </p>
+            </div>
+
+            <div class="relative overflow-hidden">
+                <div class="logo-slider flex space-x-16 items-center">
+                    <!-- Logo 1 -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-tools text-3xl text-primary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 1</p>
+                        </div>
+                    </div>
+                    <!-- Logo 2 -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-chart-bar text-3xl text-secondary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 2</p>
+                        </div>
+                    </div>
+                    <!-- Logo 3 -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-search text-3xl text-tertiary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 3</p>
+                        </div>
+                    </div>
+                    <!-- Logo 4 -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-ad text-3xl text-primary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 4</p>
+                        </div>
+                    </div>
+                    <!-- Logo 5 -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-share-alt text-3xl text-secondary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 5</p>
+                        </div>
+                    </div>
+                    <!-- Logo 6 -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-palette text-3xl text-tertiary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 6</p>
+                        </div>
+                    </div>
+                    <!-- Tekrar eden logolar (sonsuz döngü için) -->
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-tools text-3xl text-primary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 1</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-chart-bar text-3xl text-secondary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 2</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow-lg w-32 h-20 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-search text-3xl text-tertiary mb-2"></i>
+                            <p class="text-xs font-roboto text-gray-600">Tool 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Müşteri Yorumları -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Müşteri Yorumları
+                </h2>
+                <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+                    Başarı hikayelerimiz ve memnun müşterilerimiz
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Yorum 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4">
+                            <span class="font-helvetica text-white font-bold text-lg">A</span>
+                        </div>
+                        <div>
+                            <h4 class="font-helvetica font-bold text-primary">Ahmet Yılmaz</h4>
+                            <p class="font-roboto text-sm text-gray-600">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="font-roboto text-gray-700 mb-4 leading-relaxed">
+                        "NETSEO ile çalışmaya başladıktan sonra web sitemizin trafiği %300 arttı. Profesyonel yaklaşımları ve sonuç odaklı çalışmaları gerçekten etkileyici."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Yorum 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-tertiary rounded-full flex items-center justify-center mr-4">
+                            <span class="font-helvetica text-white font-bold text-lg">S</span>
+                        </div>
+                        <div>
+                            <h4 class="font-helvetica font-bold text-primary">Selin Demir</h4>
+                            <p class="font-roboto text-sm text-gray-600">Pazarlama Müdürü, FashionBrand</p>
+                        </div>
+                    </div>
+                    <p class="font-roboto text-gray-700 mb-4 leading-relaxed">
+                        "Sosyal medya yönetimi ve reklam kampanyalarımızda NETSEO'nun AI destekli çözümleri sayesinde ROI'miz %150 arttı. Kesinlikle tavsiye ederim."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Yorum 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-tertiary to-primary rounded-full flex items-center justify-center mr-4">
+                            <span class="font-helvetica text-white font-bold text-lg">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-helvetica font-bold text-primary">Mehmet Kaya</h4>
+                            <p class="font-roboto text-sm text-gray-600">Kurucu, StartupXYZ</p>
+                        </div>
+                    </div>
+                    <p class="font-roboto text-gray-700 mb-4 leading-relaxed">
+                        "E-ticaret sitemizin kurulumundan SEO optimizasyonuna kadar her aşamada NETSEO'nun uzmanlığından faydalandık. Satışlarımız %400 arttı!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <!-- Yorum 4 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4">
+                            <span class="font-helvetica text-white font-bold text-lg">E</span>
+                        </div>
+                        <div>
+                            <h4 class="font-helvetica font-bold text-primary">Elif Özkan</h4>
+                            <p class="font-roboto text-sm text-gray-600">Dijital Pazarlama Uzmanı, GlobalCorp</p>
+                        </div>
+                    </div>
+                    <p class="font-roboto text-gray-700 mb-4 leading-relaxed">
+                        "Uluslararası pazarlama stratejilerimizde NETSEO'nun danışmanlığı çok değerli oldu. 5 farklı ülkede başarılı kampanyalar yürüttük."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Carousel -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Blog
+                </h2>
+                <p class="font-roboto text-xl text-gray-600 max-w-3xl mx-auto">
+                    Dijital pazarlama dünyasından en güncel bilgiler ve ipuçları
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                        <i class="fas fa-newspaper text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span class="font-roboto">15 Mart 2024</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-3">
+                            2024 SEO Trendleri ve Yapay Zeka
+                        </h3>
+                        <p class="font-roboto text-gray-600 mb-4 leading-relaxed">
+                            Yapay zeka teknolojilerinin SEO dünyasını nasıl değiştirdiğini ve 2024'te dikkat etmeniz gereken trendleri inceliyoruz.
+                        </p>
+                        <a href="#" class="font-roboto text-secondary font-semibold hover:text-primary transition-colors">
+                            Devamını Oku →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-tertiary flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span class="font-roboto">12 Mart 2024</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-3">
+                            Sosyal Medya Pazarlamasında Başarı Stratejileri
+                        </h3>
+                        <p class="font-roboto text-gray-600 mb-4 leading-relaxed">
+                            Sosyal medya platformlarında markanızı öne çıkarmanın yolları ve etkili içerik stratejileri hakkında detaylı bir rehber.
+                        </p>
+                        <a href="#" class="font-roboto text-secondary font-semibold hover:text-primary transition-colors">
+                            Devamını Oku →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-br from-tertiary to-primary flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span class="font-roboto">10 Mart 2024</span>
+                        </div>
+                        <h3 class="font-helvetica text-xl font-bold text-primary mb-3">
+                            E-Ticaret Sitesi Optimizasyonu
+                        </h3>
+                        <p class="font-roboto text-gray-600 mb-4 leading-relaxed">
+                            E-ticaret sitenizin satışlarını artırmak için uygulamanız gereken optimizasyon teknikleri ve kullanıcı deneyimi iyileştirmeleri.
+                        </p>
+                        <a href="#" class="font-roboto text-secondary font-semibold hover:text-primary transition-colors">
+                            Devamını Oku →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="flex justify-center mt-12 space-x-4">
+                <button class="w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Logo slider için JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.logo-slider');
+            if (slider) {
+                // Slider'ın kopyasını oluştur (sonsuz döngü için)
+                const clone = slider.cloneNode(true);
+                slider.parentNode.appendChild(clone);
+            }
+        });
+    </script>
+</body>
+</html>
