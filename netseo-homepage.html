@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NETSEO - Dijital Pazarlama ve Reklam Ajansı</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            helvetica: ['Helvetica', 'Arial', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+          },
+          colors: {
+            primary: '#3A3088',
+            secondary: '#646FD1',
+            tertiary: '#764BA2',
+            quaternary: '#FFFFFF',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-helvetica { font-family: 'Helvetica', Arial, sans-serif; }
+    .font-roboto { font-family: 'Roboto', sans-serif; }
+
+    /* Full-bleed helper to break out from centered layout */
+    .full-bleed {
+      position: relative;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+
+    html, body { overflow-x: hidden; }
+
+    /* Infinite marquee for logo slider */
+    .logo-track { animation: marquee 40s linear infinite; }
+    .logo-track:hover { animation-play-state: paused; }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="font-roboto text-gray-900">
+  <!-- Hero Area (Full-bleed) -->
+  <section class="full-bleed relative min-h-screen bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10 relative z-10 text-center">
+      <h1 class="font-helvetica text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        Dijital Dünyada <span class="text-quaternary">Öne Çıkın</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto leading-relaxed">
+        AI destekli yeni nesil dijital pazarlama ve reklam çözümleriyle markanızı dijital dünyada zirveye taşıyoruz.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#iletisim" class="bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-[1.02]">Bizimle İletişime Geçin</a>
+        <a href="#teklif" class="bg-white hover:bg-white/90 text-primary font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:scale-[1.02]">Teklif Alın</a>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+  <!-- Neden NETSEO -->
+  <section class="py-20 bg-white">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-8">Neden NETSEO?</h2>
+          <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <p>
+              <span class="text-primary font-semibold">10+ yıllık deneyim</span> ve AI teknolojileri ile geleneksel yöntemleri birleştirerek ölçülebilir başarı sağlıyoruz.
+            </p>
+            <p>
+              <span class="text-primary font-semibold">%95 müşteri memnuniyeti</span> ve <span class="text-primary font-semibold">500+ proje</span> tecrübesiyle sektörünüz için özelleştirilmiş stratejiler üretiyoruz.
+            </p>
+            <p>
+              SEO, reklam yönetimi, sosyal medya ve web tasarım alanlarında <span class="text-primary font-semibold">uçtan uca hizmet</span> sunuyoruz.
+            </p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 h-96 flex items-center justify-center">
+          <div class="text-center text-white">
+            <i class="fas fa-image text-6xl mb-4 opacity-60"></i>
+            <p class="text-lg">Resim Alanı</p>
+            <p class="text-sm opacity-80">Görseli buraya ekleyin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hizmetlerimiz -->
+  <section class="py-20 bg-gray-50">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-16">
+        <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">Hizmetlerimiz</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dijital başarınız için ihtiyacınız olan tüm hizmetler tek çatı altında</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- SEO -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-primary mb-3">SEO</h3>
+          <p class="text-gray-600">Arama motorlarında görünürlüğünüzü artıran yerel, ulusal ve uluslararası SEO stratejileri ile organik trafiğinizi büyütüyoruz.</p>
+        </div>
+        <!-- Logo ve Kurumsal Kimlik -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="bg-gradient-to-br from-secondary to-tertiary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-palette text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-primary mb-3">Logo & Kurumsal Kimlik</h3>
+          <p class="text-gray-600">Marka değerinizle uyumlu, akılda kalıcı kurumsal kimlik ve profesyonel logo tasarımları oluşturuyoruz.</p>
+        </div>
+        <!-- Kurumsal Web Site Tasarımı -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="bg-gradient-to-br from-tertiary to-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-laptop-code text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-primary mb-3">Kurumsal Web Site Tasarımı</h3>
+          <p class="text-gray-600">Hızlı, güvenilir ve kullanıcı dostu arayüzlerle dönüşüm odaklı kurumsal web siteleri tasarlıyoruz.</p>
+        </div>
+        <!-- E-Ticaret Hizmetleri -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="bg-gradient-to-br from-primary to-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-shopping-cart text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-primary mb-3">E-Ticaret Hizmetleri</h3>
+          <p class="text-gray-600">Güvenli ödeme, stok ve sipariş yönetimi ile uçtan uca e-ticaret altyapısı kuruyor ve optimize ediyoruz.</p>
+        </div>
+        <!-- Google ADS & META Reklam Yönetimi -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="bg-gradient-to-br from-secondary to-tertiary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-ad text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-primary mb-3">Google ADS & META Reklam Yönetimi</h3>
+          <p class="text-gray-600">Dijital reklam bütçenizi en verimli şekilde kullanarak maksimum ROAS sağlayan kampanyalar yönetiyoruz.</p>
+        </div>
+        <!-- Sosyal Medya Yönetimi -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="bg-gradient-to-br from-tertiary to-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-share-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-primary mb-3">Sosyal Medya Yönetimi</h3>
+          <p class="text-gray-600">İçerik üretimi, topluluk yönetimi ve büyüme odaklı stratejilerle marka bilinirliğinizi artırıyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nasıl Çalışıyoruz (6 Adım) -->
+  <section class="py-20 bg-white">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-16">
+        <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">Nasıl Çalışıyoruz?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">6 adımlık sistematik yaklaşımımızla projelerinizi başarıya ulaştırıyoruz</p>
+      </div>
+
+      <div class="relative">
+        <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-tertiary -translate-y-1/2 z-0"></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+          <!-- 1 -->
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span class="font-helvetica text-2xl font-bold">1</span>
+            </div>
+            <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Analiz & Araştırma</h3>
+            <p class="text-gray-600">Mevcut durum, rakipler ve hedef kitle derinlemesine incelenir.</p>
+          </div>
+          <!-- 2 -->
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-secondary to-tertiary text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span class="font-helvetica text-2xl font-bold">2</span>
+            </div>
+            <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Strateji Geliştirme</h3>
+            <p class="text-gray-600">Hedeflerinize uygun, ölçülebilir ve gerçekçi yol haritası oluşturulur.</p>
+          </div>
+          <!-- 3 -->
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-tertiary to-primary text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span class="font-helvetica text-2xl font-bold">3</span>
+            </div>
+            <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Tasarım & Uygulama</h3>
+            <p class="text-gray-600">Kreatif tasarımlar ve teknik uygulamalar hayata geçirilir.</p>
+          </div>
+          <!-- 4 -->
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span class="font-helvetica text-2xl font-bold">4</span>
+            </div>
+            <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Test & Optimizasyon</h3>
+            <p class="text-gray-600">Sürekli A/B testleri ve iyileştirmeler ile performans artırılır.</p>
+          </div>
+          <!-- 5 -->
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-secondary to-tertiary text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span class="font-helvetica text-2xl font-bold">5</span>
+            </div>
+            <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Lansman & İzleme</h3>
+            <p class="text-gray-600">Proje yayına alınır, metrikler düzenli olarak takip edilir.</p>
+          </div>
+          <!-- 6 -->
+          <div class="text-center">
+            <div class="w-20 h-20 rounded-full bg-gradient-to-br from-tertiary to-primary text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <span class="font-helvetica text-2xl font-bold">6</span>
+            </div>
+            <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Sürekli Destek</h3>
+            <p class="text-gray-600">Bakım, güncelleme ve danışmanlıkla sürdürülebilir başarı sağlanır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yapay Zeka ve Mühendislik Çözümlerimiz (Full-bleed) -->
+  <section class="full-bleed py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-16">
+        <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-white mb-6">Yapay Zeka ve Mühendislik Çözümlerimiz</h2>
+        <p class="text-xl text-white/90 max-w-3xl mx-auto">Geleceğin teknolojilerini bugün kullanarak rekabette öne geçin</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-robot text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-white mb-3">YZ Destekli SEO</h3>
+          <p class="text-white/90">Anahtar kelime kümeleri, içerik puanlama ve rakip boşluk analiziyle SEO performansını otomatik iyileştiriyoruz.</p>
+        </div>
+        <!-- 2 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-pen-fancy text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-white mb-3">YZ İçerik Üretimi</h3>
+          <p class="text-white/90">Marka tonu korunarak SEO uyumlu blog, sosyal medya ve reklam içerikleri üretiyoruz.</p>
+        </div>
+        <!-- 3 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-cogs text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-white mb-3">Otomasyon ve ERP Çözümleri</h3>
+          <p class="text-white/90">Süreç otomasyonu, entegrasyonlar ve ERP modülleriyle verimliliği artırıyoruz.</p>
+        </div>
+        <!-- 4 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-chart-line text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-white mb-3">Otomatik Raporlama</h3>
+          <p class="text-white/90">Gerçek zamanlı paneller ve otomatik PDF/Excel raporları ile karar alma hızlanır.</p>
+        </div>
+        <!-- 5 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-video text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-white mb-3">YZ Destekli Görsel ve Video Üretimi</h3>
+          <p class="text-white/90">Görsel tasarım, animasyon ve video prodüksiyonda AI destekli hızlı üretim.</p>
+        </div>
+        <!-- 6 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div class="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-bullhorn text-white text-2xl"></i>
+          </div>
+          <h3 class="font-helvetica text-2xl font-bold text-white mb-3">YZ Destekli Reklam ve Sosyal Medya</h3>
+          <p class="text-white/90">Bütçe optimizasyonu, hedef kitle segmentasyonu ve otomatik yaratıcı testleri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kullandığımız Uygulamalar (Logo Slider) -->
+  <section class="py-20 bg-gray-50">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-16">
+        <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">Kullandığımız Uygulamalar</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Güncel teknolojiler ve güçlü araçlar ile sonuç odaklı çözümler</p>
+      </div>
+
+      <div class="relative overflow-hidden">
+        <div class="logo-track flex items-center gap-16">
+          <!-- Sequence A -->
+          <div class="flex items-center gap-16">
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-tools text-3xl text-primary mb-1"></i><p class="text-xs text-gray-600">Tool 1</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-chart-bar text-3xl text-secondary mb-1"></i><p class="text-xs text-gray-600">Tool 2</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-search text-3xl text-tertiary mb-1"></i><p class="text-xs text-gray-600">Tool 3</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-ad text-3xl text-primary mb-1"></i><p class="text-xs text-gray-600">Tool 4</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-share-alt text-3xl text-secondary mb-1"></i><p class="text-xs text-gray-600">Tool 5</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-palette text-3xl text-tertiary mb-1"></i><p class="text-xs text-gray-600">Tool 6</p></div>
+            </div>
+          </div>
+          <!-- Sequence B (duplicate for infinite loop) -->
+          <div aria-hidden="true" class="flex items-center gap-16">
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-tools text-3xl text-primary mb-1"></i><p class="text-xs text-gray-600">Tool 1</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-chart-bar text-3xl text-secondary mb-1"></i><p class="text-xs text-gray-600">Tool 2</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-search text-3xl text-tertiary mb-1"></i><p class="text-xs text-gray-600">Tool 3</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-ad text-3xl text-primary mb-1"></i><p class="text-xs text-gray-600">Tool 4</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-share-alt text-3xl text-secondary mb-1"></i><p class="text-xs text-gray-600">Tool 5</p></div>
+            </div>
+            <div class="flex-shrink-0 bg-white rounded-xl p-6 shadow w-36 h-20 flex items-center justify-center">
+              <div class="text-center"><i class="fas fa-palette text-3xl text-tertiary mb-1"></i><p class="text-xs text-gray-600">Tool 6</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Müşteri Yorumları -->
+  <section class="py-20 bg-white">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-16">
+        <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">Müşteri Yorumları</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Başarı hikayelerimiz ve memnun müşterilerimiz</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 1 -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4">
+              <span class="font-helvetica text-white font-bold text-lg">A</span>
+            </div>
+            <div>
+              <h4 class="font-helvetica font-bold text-primary">Ahmet Yılmaz</h4>
+              <p class="text-sm text-gray-600">CEO, TechCorp</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"NETSEO ile çalıştıktan sonra organik trafiğimiz katlandı. Stratejik yaklaşım ve şeffaf raporlama harika."</p>
+          <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+        <!-- 2 -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-secondary to-tertiary rounded-full flex items-center justify-center mr-4">
+              <span class="font-helvetica text-white font-bold text-lg">S</span>
+            </div>
+            <div>
+              <h4 class="font-helvetica font-bold text-primary">Selin Demir</h4>
+              <p class="text-sm text-gray-600">Pazarlama Müdürü, FashionBrand</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"AI destekli reklam optimizasyonları ile ROAS'ımız ciddi oranda yükseldi. Çok memnunuz."</p>
+          <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+        <!-- 3 -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-tertiary to-primary rounded-full flex items-center justify-center mr-4">
+              <span class="font-helvetica text-white font-bold text-lg">M</span>
+            </div>
+            <div>
+              <h4 class="font-helvetica font-bold text-primary">Mehmet Kaya</h4>
+              <p class="text-sm text-gray-600">Kurucu, StartupXYZ</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"E-ticaret tarafında kurulumdan ölçeklendirmeye kadar uçtan uca destek aldık. Satışlarımız hızla arttı."</p>
+          <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        </div>
+        <!-- 4 -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4">
+              <span class="font-helvetica text-white font-bold text-lg">E</span>
+            </div>
+            <div>
+              <h4 class="font-helvetica font-bold text-primary">Elif Özkan</h4>
+              <p class="text-sm text-gray-600">Dijital Pazarlama Uzmanı, GlobalCorp</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">"Çok dilli SEO ve içerik stratejileri sayesinde yeni pazarlara hızlı giriş yaptık."</p>
+          <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Carousel (3'erli sayfalar) -->
+  <section class="py-20 bg-gray-50">
+    <div class="w-full max-w-screen-xl mx-auto px-6 md:px-10">
+      <div class="text-center mb-16">
+        <h2 class="font-helvetica text-4xl md:text-5xl font-bold text-primary mb-6">Blog</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dijital pazarlama dünyasından güncel içerikler</p>
+      </div>
+
+      <div id="blog-carousel" class="relative">
+        <div class="overflow-hidden">
+          <div id="blog-track" class="flex transition-transform duration-500">
+            <!-- Page 1 (Yeni → Eski) -->
+            <div class="shrink-0 w-full grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Post 1 -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+                <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <i class="fas fa-newspaper text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center text-sm text-gray-500 mb-3"><i class="fas fa-calendar mr-2"></i><span>20 Mart 2024</span></div>
+                  <h3 class="font-helvetica text-xl font-bold text-primary mb-2">2024 SEO Trendleri ve Yapay Zeka</h3>
+                  <p class="text-gray-600 mb-4">AI, arama niyeti ve içerik kalitesini yeniden tanımlıyor. Odaklanmanız gerekenler…</p>
+                  <a href="#" class="text-secondary font-semibold hover:text-primary">Devamını Oku →</a>
+                </div>
+              </div>
+              <!-- Post 2 -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+                <div class="h-48 bg-gradient-to-br from-secondary to-tertiary flex items-center justify-center">
+                  <i class="fas fa-chart-line text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center text-sm text-gray-500 mb-3"><i class="fas fa-calendar mr-2"></i><span>16 Mart 2024</span></div>
+                  <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Sosyal Medyada Performans Pazarlaması</h3>
+                  <p class="text-gray-600 mb-4">Kreatif testleri ve hedefleme tüyolarıyla ROAS'ı nasıl artırırsınız?</p>
+                  <a href="#" class="text-secondary font-semibold hover:text-primary">Devamını Oku →</a>
+                </div>
+              </div>
+              <!-- Post 3 -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+                <div class="h-48 bg-gradient-to-br from-tertiary to-primary flex items-center justify-center">
+                  <i class="fas fa-shopping-cart text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center text-sm text-gray-500 mb-3"><i class="fas fa-calendar mr-2"></i><span>14 Mart 2024</span></div>
+                  <h3 class="font-helvetica text-xl font-bold text-primary mb-2">E-Ticaret Dönüşüm Optimizasyonu</h3>
+                  <p class="text-gray-600 mb-4">Sepet adımlarında sürtünmeyi azaltan pratik UX ve hız ipuçları.</p>
+                  <a href="#" class="text-secondary font-semibold hover:text-primary">Devamını Oku →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="shrink-0 w-full grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Post 4 -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+                <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <i class="fas fa-user-graduate text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center text-sm text-gray-500 mb-3"><i class="fas fa-calendar mr-2"></i><span>12 Mart 2024</span></div>
+                  <h3 class="font-helvetica text-xl font-bold text-primary mb-2">SEO Eğitimi: Temelden İleriye</h3>
+                  <p class="text-gray-600 mb-4">Ekipleriniz için pratik uygulamalarla dolu eğitim notları.</p>
+                  <a href="#" class="text-secondary font-semibold hover:text-primary">Devamını Oku →</a>
+                </div>
+              </div>
+              <!-- Post 5 -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+                <div class="h-48 bg-gradient-to-br from-secondary to-tertiary flex items-center justify-center">
+                  <i class="fas fa-globe text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center text-sm text-gray-500 mb-3"><i class="fas fa-calendar mr-2"></i><span>10 Mart 2024</span></div>
+                  <h3 class="font-helvetica text-xl font-bold text-primary mb-2">Uluslararası SEO Başlangıç Rehberi</h3>
+                  <p class="text-gray-600 mb-4">Hreflang, içerik yerelleştirme ve teknik yapı taşları.</p>
+                  <a href="#" class="text-secondary font-semibold hover:text-primary">Devamını Oku →</a>
+                </div>
+              </div>
+              <!-- Post 6 -->
+              <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
+                <div class="h-48 bg-gradient-to-br from-tertiary to-primary flex items-center justify-center">
+                  <i class="fas fa-envelope-open-text text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center text-sm text-gray-500 mb-3"><i class="fas fa-calendar mr-2"></i><span>08 Mart 2024</span></div>
+                  <h3 class="font-helvetica text-xl font-bold text-primary mb-2">E-Posta Otomasyonlarında Kişiselleştirme</h3>
+                  <p class="text-gray-600 mb-4">Segmentasyon ve tetikleyici senaryolarla gelir artışı.</p>
+                  <a href="#" class="text-secondary font-semibold hover:text-primary">Devamını Oku →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex justify-center mt-12 gap-4">
+          <button id="blog-prev" class="w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors"><i class="fas fa-chevron-left"></i></button>
+          <button id="blog-next" class="w-12 h-12 bg-primary hover:bg-secondary text-white rounded-full flex items-center justify-center transition-colors"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Blog carousel (2 sayfa, 3'er kart)
+    (function() {
+      const track = document.getElementById('blog-track');
+      if (!track) return;
+      const prev = document.getElementById('blog-prev');
+      const next = document.getElementById('blog-next');
+      let index = 0;
+      const total = track.children.length; // 2 sayfa
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+      prev?.addEventListener('click', () => { index = (index - 1 + total) % total; update(); });
+      next?.addEventListener('click', () => { index = (index + 1) % total; update(); });
+    })();
+  </script>
+</body>
+</html>
