@@ -345,12 +345,12 @@ function aviyoma_services_shortcode( $atts = [] ) {
                             <div class="bg-gradient-to-r from-[color:var(--primary)] to-[color:var(--primary-light)] p-4 text-white">
                                 <div class="flex items-start justify-between">
                                     <div class="flex-1">
-                                        <div class="text-xs font-medium opacity-90 mb-1">${cat}</div>
-                                        <h3 class="text-lg font-bold leading-tight">${item.title}</h3>
+                                        <div class="text-xs font-medium text-white mb-1">${cat}</div>
+                                        <h3 class="text-lg font-bold leading-tight text-white">${item.title}</h3>
                                     </div>
                                     <div class="text-right">
-                                        <div class="text-2xl font-bold">${Number(item.price).toLocaleString()}</div>
-                                        <div class="text-xs opacity-90">₺</div>
+                                        <div class="text-2xl font-bold text-white">${Number(item.price).toLocaleString()}</div>
+                                        <div class="text-xs text-white opacity-90">₺</div>
                                     </div>
                                 </div>
                             </div>
@@ -458,8 +458,8 @@ function aviyoma_services_shortcode( $atts = [] ) {
                 
                 block.innerHTML = `
                     <div class="bg-gradient-to-r from-[color:var(--primary)] to-[color:var(--primary-light)] p-4 text-white">
-                        <h4 class="text-xl font-bold">${s.title}</h4>
-                        <p class="text-sm opacity-90 mt-1">Ek hizmetler ve özelleştirmeler</p>
+                        <h4 class="text-xl font-bold text-white">${s.title}</h4>
+                        <p class="text-sm text-white opacity-90 mt-1">Ek hizmetler ve özelleştirmeler</p>
                     </div>
                     <div class="p-4">
                         <div id="extras-${s.id}" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
@@ -480,12 +480,12 @@ function aviyoma_services_shortcode( $atts = [] ) {
                         exCard.innerHTML = `
                             <div class="flex items-center justify-between">
                                 <div class="flex-1">
-                                    <div class="font-medium text-gray-900">${ex.title}</div>
-                                    <div class="text-sm text-gray-500 mt-1">Ek özellik</div>
+                                    <div class="font-medium text-white">${ex.title}</div>
+                                    <div class="text-sm text-white opacity-75 mt-1">Ek özellik</div>
                                 </div>
                                 <div class="text-right">
-                                    <div class="text-lg font-bold text-[color:var(--primary)]">${Number(ex.price).toLocaleString()} ₺</div>
-                                    <div class="text-xs text-gray-500">ek ücret</div>
+                                    <div class="text-lg font-bold text-white">${Number(ex.price).toLocaleString()} ₺</div>
+                                    <div class="text-xs text-white opacity-75">ek ücret</div>
                                 </div>
                             </div>
                         `;
@@ -496,15 +496,9 @@ function aviyoma_services_shortcode( $atts = [] ) {
                             if(found === -1){
                                 selectedExtras[s.id].push({id:ex.id,title:ex.title,price:ex.price});
                                 exCard.classList.add('bg-[color:var(--primary)]', 'text-white', 'border-[color:var(--primary)]');
-                                exCard.querySelector('.text-gray-900').classList.add('text-white');
-                                exCard.querySelector('.text-gray-500').classList.add('text-white', 'opacity-90');
-                                exCard.querySelector('.text-[color:var(--primary)]').classList.add('text-white');
                             } else {
                                 selectedExtras[s.id].splice(found,1);
                                 exCard.classList.remove('bg-[color:var(--primary)]', 'text-white', 'border-[color:var(--primary)]');
-                                exCard.querySelector('.text-white').classList.remove('text-white');
-                                exCard.querySelector('.text-white.opacity-90').classList.remove('text-white', 'opacity-90');
-                                exCard.querySelector('.text-white').classList.remove('text-white');
                             }
                         });
                         
