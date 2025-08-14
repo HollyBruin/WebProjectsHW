@@ -103,7 +103,7 @@ function aviyoma_services_shortcode( $atts = [] ) {
     ?>
 
     <!-- Aviyoma Services Shortcode Output -->
-    <div id="aviyoma-root" class="max-w-7xl mx-auto p-6" style="--primary:#005B4F; --primary-light:#007A6B; --heading:#1E3C54; --text:#1F2124; --card-bg:#F8FAFC; --accent:#E6F3F1;">
+    <div id="aviyoma-root" class="max-w-7xl mx-auto p-6" style="--primary:#9D69E0; --primary-light:#B085E8; --heading:#1E3C54; --text:#1F2124; --card-bg:#F8FAFC; --accent:#F3EFF9;">
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
