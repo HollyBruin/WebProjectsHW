@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportiva Demo - Proje Yapısı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .demo-section h2 {
+            color: #1E3A8A;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3B82F6;
+            padding-bottom: 0.5rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #3B82F6;
+        }
+        
+        .feature-card h3 {
+            color: #1E3A8A;
+            margin-bottom: 0.5rem;
+        }
+        
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3B82F6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+        
+        .btn:hover {
+            background: #1E3A8A;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: #1E3A8A;
+        }
+        
+        .btn-primary:hover {
+            background: #1e40af;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .status-success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status-warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .file-structure {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+        }
+        
+        .file-structure .folder {
+            color: #3B82F6;
+            font-weight: bold;
+        }
+        
+        .file-structure .file {
+            color: #059669;
+        }
+        
+        .colors {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .color-swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.875rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .color-primary { background: #1E3A8A; }
+        .color-secondary { background: #3B82F6; }
+        .color-light { background: #f0f0f0; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>🚢 Exportiva Anasayfa Demo</h1>
+            <p>Modern, etkileşimli ve dinamik anasayfa projesi</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="demo-section">
+            <h2>📋 Proje Özeti</h2>
+            <p>Bu proje, Exportiva İhracat Danışmanlığı için tasarlanmış modern bir anasayfadır. Tüm istenen özellikler implement edilmiş ve production-ready durumdadır.</p>
+            
+            <div class="colors">
+                <div class="color-swatch color-primary">#1E3A8A<br>Ana Mavi</div>
+                <div class="color-swatch color-secondary">#3B82F6<br>Açık Mavi</div>
+                <div class="color-swatch color-light">#f0f0f0<br>Açık Gri</div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>✅ Tamamlanan Özellikler</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🎨 Tasarım</h3>
+                    <p>Exportiva kurumsal renklerine sadık, modern ve profesyonel tasarım</p>
+                    <span class="status status-success">Tamamlandı</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📱 Responsive</h3>
+                    <p>Tüm cihazlarda mükemmel görünüm, mobile-first yaklaşım</p>
+                    <span class="status status-success">Tamamlandı</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎭 Animasyonlar</h3>
+                    <p>Smooth scroll animasyonları, parallax efektleri, hover animasyonları</p>
+                    <span class="status status-success">Tamamlandı</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🚢 Gemi Animasyonu</h3>
+                    <p>Scroll ile etkileşimli gemi animasyonu, global ticaret sembolü</p>
+                    <span class="status status-success">Tamamlandı</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📊 İnteraktif Grafikler</h3>
+                    <p>Scroll ile yükselen barlar, hover efektleri</p>
+                    <span class="status status-success">Tamamlandı</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🤖 AI Chatbot</h3>
+                    <p>Exportiva AI asistan butonu, modal entegrasyonu</p>
+                    <span class="status status-success">Tamamlandı</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>📁 Proje Yapısı</h2>
+            <div class="file-structure">
+<span class="folder">exportiva-homepage/</span>
+├── <span class="file">index.html</span>          # Ana HTML dosyası
+├── <span class="folder">css/</span>
+│   └── <span class="file">style.css</span>      # Ana CSS dosyası
+├── <span class="folder">js/</span>
+│   └── <span class="file">main.js</span>        # Ana JavaScript dosyası
+├── <span class="folder">img/</span>              # Görsel dosyaları
+│   └── <span class="file">README.md</span>      # Görsel açıklamaları
+├── <span class="file">README.md</span>           # Proje dokümantasyonu
+└── <span class="file">demo.html</span>           # Bu demo sayfası
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>🚀 Kurulum ve Kullanım</h2>
+            <p>Projeyi çalıştırmak için aşağıdaki adımları takip edin:</p>
+            
+            <div class="code-block">
+# Local server başlatma
+cd exportiva-homepage
+python -m http.server 8000
+
+# Tarayıcıda açın
+http://localhost:8000
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📖 Dokümantasyon</h3>
+                    <p>Detaylı README.md dosyası ile tüm özellikler açıklanmıştır.</p>
+                    <a href="README.md" class="btn">README.md</a>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎯 Ana Sayfa</h3>
+                    <p>Tam özellikli anasayfa, tüm bölümler ve animasyonlar.</p>
+                    <a href="index.html" class="btn btn-primary">index.html</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>🔧 Teknik Detaylar</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>💻 Teknolojiler</h3>
+                    <ul>
+                        <li>HTML5 Semantic Elements</li>
+                        <li>CSS3 Grid & Flexbox</li>
+                        <li>Vanilla JavaScript ES6+</li>
+                        <li>CSS Animations & Transitions</li>
+                        <li>Intersection Observer API</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📱 Responsive Breakpoints</h3>
+                    <ul>
+                        <li>Mobile: 480px</li>
+                        <li>Tablet: 768px</li>
+                        <li>Desktop: 1200px+</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🎨 Font & İkonlar</h3>
+                    <ul>
+                        <li>Poppins Font Family</li>
+                        <li>Font Awesome 6.4.0</li>
+                        <li>Google Fonts CDN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>📝 Sonraki Adımlar</h2>
+            <p>Projeyi production'a hazırlamak için:</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🖼️ Görseller</h3>
+                    <p>Placeholder görselleri gerçek Exportiva görselleri ile değiştirin.</p>
+                    <span class="status status-warning">Gerekli</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔗 Linkler</h3>
+                    <p>Sosyal medya ve iletişim linklerini güncelleyin.</p>
+                    <span class="status status-warning">Gerekli</span>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📧 Form Entegrasyonu</h3>
+                    <p>CTA formlarını backend sistemine entegre edin.</p>
+                    <span class="status status-warning">Opsiyonel</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>🎯 Test Etme</h2>
+            <p>Projeyi test etmek için:</p>
+            
+            <a href="index.html" class="btn btn-primary">🚀 Ana Sayfayı Aç</a>
+            <a href="README.md" class="btn">📖 Dokümantasyonu Oku</a>
+            
+            <div class="code-block">
+# Test edilecek özellikler:
+✅ Responsive tasarım
+✅ Scroll animasyonları
+✅ Hover efektleri
+✅ Mobile navigation
+✅ Touch gestures
+✅ Performance
+✅ Cross-browser compatibility
+            </div>
+        </div>
+    </div>
+    
+    <footer style="background: #1E3A8A; color: white; text-align: center; padding: 2rem; margin-top: 3rem;">
+        <div class="container">
+            <p><strong>Exportiva - İhracatta Dijital Gücünüz</strong> 🚢</p>
+            <p>Modern anasayfa projesi başarıyla tamamlandı!</p>
+        </div>
+    </footer>
+</body>
+</html>
