@@ -1063,6 +1063,12 @@ crossorigin="anonymous"></script>
             </div>
           </div>
         </div>
+
+        <!-- Boş slide (mobilde tek kart göstermek için) -->
+        <div class="slider-slide" style="visibility: hidden;">
+          <div class="testimonial-card" style="opacity: 0;">
+          </div>
+        </div>
       </div>
 
       <!-- Slider kontrolleri -->
@@ -1120,7 +1126,7 @@ crossorigin="anonymous"></script>
     }
 
     // Auto slide every 5 seconds
-    setInterval(() => {
+    let autoSlideInterval = setInterval(() => {
       if (currentSlide < totalSlides - 1) {
         slideNext();
       } else {
@@ -1128,8 +1134,27 @@ crossorigin="anonymous"></script>
       }
     }, 5000);
 
+    // Pause auto-slide on hover
+    const sliderContainer = document.querySelector('.testimonials-slider');
+    sliderContainer.addEventListener('mouseenter', () => {
+      clearInterval(autoSlideInterval);
+    });
+
+    sliderContainer.addEventListener('mouseleave', () => {
+      autoSlideInterval = setInterval(() => {
+        if (currentSlide < totalSlides - 1) {
+          slideNext();
+        } else {
+          goToSlide(0);
+        }
+      }, 5000);
+    });
+
     // Initialize
     updateSlider();
+
+    // Handle window resize
+    window.addEventListener('resize', updateSlider);
   </script>
 </section>
 <!-- MÜŞTERİ YORUMLARI BÖLÜMÜ BİTİŞ -->
