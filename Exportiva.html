@@ -351,5 +351,301 @@ crossorigin="anonymous"></script>
 </section>
 <!-- YAPAY ZEKA İLE AKILLI İHRACAT BÖLÜMÜ BİTİŞ -->
 
+<!-- HANGİ SEKTÖRLERDE VARIZ BÖLÜMÜ BAŞLANGIÇ -->
+<section class="exportiva-sectors" aria-labelledby="sectors-title">
+  <style>
+    :root{
+      --primary:#316FC7;
+      --accent:#FFC857;
+      --bg:#FFFFFF;
+      --ink:#0B1B2B;
+      --muted:#6B7A90;
+      --line:#E6EAF2;
+      --shadow:0 12px 32px rgba(18,38,63,.10);
+    }
+    .exportiva-sectors{
+      background:var(--bg);
+      padding:56px 20px;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;
+      color:var(--ink);
+      position:relative; isolation:isolate;
+    }
+    .sectors-wrap{ max-width:1180px; margin:0 auto; }
+    .sectors-header{
+      text-align:center; margin-bottom:48px;
+    }
+    .sectors-header h2{
+      font-size:32px; font-weight:700; line-height:1.2; margin-bottom:16px;
+      background:linear-gradient(135deg, var(--primary), #2A60AF);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text;
+    }
+    .sectors-header p{
+      font-size:16px; line-height:1.6; color:var(--muted);
+      max-width:600px; margin:0 auto;
+    }
+
+    /* Sektör kartları grid */
+    .sectors-grid{
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+      gap:24px; margin-top:40px;
+    }
+
+    /* Sektör kartı */
+    .sector-card{
+      position:relative; border-radius:16px; overflow:hidden;
+      background:linear-gradient(135deg, #FAFBFF, #F4F8FF);
+      border:1px solid var(--line); box-shadow:var(--shadow);
+      transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor:pointer;
+    }
+    .sector-card:hover{
+      transform:translateY(-8px) scale(1.02);
+      box-shadow:0 20px 40px rgba(18,38,63,.15);
+      border-color:var(--primary);
+    }
+
+    /* Kart başlık alanı - İkonları içeri alacak şekilde düzenlendi */
+    .sector-header{
+      padding:24px 24px 16px; position:relative;
+      background:linear-gradient(135deg, var(--primary), #2A60AF);
+      color:white;
+      display:flex; align-items:center; gap:16px;
+    }
+    .sector-icon{
+      width:50px; height:50px; border-radius:50%;
+      background:var(--accent); display:grid; place-items:center;
+      box-shadow:0 4px 12px rgba(255,200,87,.4);
+      font-size:24px;
+      flex-shrink:0;
+    }
+    .sector-title{
+      font-size:18px; font-weight:600; line-height:1.3;
+      margin-bottom:8px;
+    }
+    .sector-subtitle{
+      font-size:14px; opacity:0.9; line-height:1.4;
+    }
+
+    /* Kart içerik alanı */
+    .sector-content{
+      padding:20px 24px 24px;
+    }
+    .sector-description{
+      font-size:14px; line-height:1.6; color:var(--muted);
+      margin-bottom:16px;
+    }
+    .sector-stats{
+      display:flex; gap:16px; align-items:center;
+    }
+    .stat-item{
+      display:flex; align-items:center; gap:6px;
+      font-size:12px; color:var(--primary); font-weight:500;
+    }
+    .stat-icon{
+      width:16px; height:16px; border-radius:50%;
+      background:var(--primary); opacity:0.2;
+    }
+
+    /* Hover efektleri */
+    .sector-card:hover .sector-icon{
+      transform:scale(1.1) rotate(5deg);
+      transition:transform 0.3s ease;
+    }
+    .sector-card:hover .sector-header{
+      background:linear-gradient(135deg, #2A60AF, var(--primary));
+    }
+
+    /* Responsive */
+    @media (max-width:768px){
+      .sectors-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+      }
+      .sectors-header h2{
+        font-size:28px;
+      }
+    }
+
+    /* Animasyonlar */
+    @keyframes cardFloat{
+      0%, 100%{ transform:translateY(0px); }
+      50%{ transform:translateY(-4px); }
+    }
+    .sector-card:nth-child(1){ animation:cardFloat 6s ease-in-out infinite; }
+    .sector-card:nth-child(2){ animation:cardFloat 6s ease-in-out infinite 1s; }
+    .sector-card:nth-child(3){ animation:cardFloat 6s ease-in-out infinite 2s; }
+    .sector-card:nth-child(4){ animation:cardFloat 6s ease-in-out infinite 3s; }
+    .sector-card:nth-child(5){ animation:cardFloat 6s ease-in-out infinite 4s; }
+    .sector-card:nth-child(6){ animation:cardFloat 6s ease-in-out infinite 5s; }
+  </style>
+
+  <div class="sectors-wrap">
+    <div class="sectors-header">
+      <h2>Hangi Sektörlerde Varız?</h2>
+      <p>Exportiva olarak 6 farklı sektörde uzmanlaşmış ekibimizle, Türk firmalarının global pazarlarda başarılı olması için kapsamlı ihracat çözümleri sunuyoruz.</p>
+    </div>
+
+    <div class="sectors-grid">
+      <!-- Makine ve Otomotiv Yan Sanayi -->
+      <div class="sector-card">
+        <div class="sector-header">
+          <div class="sector-icon">⚙️</div>
+          <div>
+            <div class="sector-title">Makine ve Otomotiv Yan Sanayi</div>
+            <div class="sector-subtitle">Endüstriyel Ekipmanlar & Yedek Parçalar</div>
+          </div>
+        </div>
+        <div class="sector-content">
+          <div class="sector-description">
+            CNC makineleri, hidrolik sistemler, motor parçaları ve endüstriyel ekipmanlar için global pazarlara açılım stratejileri geliştiriyoruz.
+          </div>
+          <div class="sector-stats">
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>50+ Ülke</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>200+ Firma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobilya ve Dekorasyon -->
+      <div class="sector-card">
+        <div class="sector-header">
+          <div class="sector-icon">🪑</div>
+          <div>
+            <div class="sector-title">Mobilya ve Dekorasyon</div>
+            <div class="sector-subtitle">Ev & Ofis Mobilyaları</div>
+          </div>
+        </div>
+        <div class="sector-content">
+          <div class="sector-description">
+            Modern tasarım mobilyaları, ofis ekipmanları ve dekorasyon ürünleri için uluslararası pazar araştırması ve satış stratejileri.
+          </div>
+          <div class="sector-stats">
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>40+ Ülke</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>150+ Firma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gıda ve Tarım -->
+      <div class="sector-card">
+        <div class="sector-header">
+          <div class="sector-icon">🌾</div>
+          <div>
+            <div class="sector-title">Gıda ve Tarım</div>
+            <div class="sector-subtitle">Organik Ürünler & Tarım Teknolojisi</div>
+          </div>
+        </div>
+        <div class="sector-content">
+          <div class="sector-description">
+            Organik gıda ürünleri, tarım teknolojileri ve işlenmiş gıdalar için sertifikasyon ve uluslararası standartlara uyum süreçleri.
+          </div>
+          <div class="sector-stats">
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>60+ Ülke</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>180+ Firma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tekstil ve Moda -->
+      <div class="sector-card">
+        <div class="sector-header">
+          <div class="sector-icon">👕</div>
+          <div>
+            <div class="sector-title">Tekstil ve Moda</div>
+            <div class="sector-subtitle">Hazır Giyim & Ev Tekstili</div>
+          </div>
+        </div>
+        <div class="sector-content">
+          <div class="sector-description">
+            Sürdürülebilir moda, hazır giyim ve ev tekstili ürünleri için trend analizi ve global marka konumlandırma stratejileri.
+          </div>
+          <div class="sector-stats">
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>70+ Ülke</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>250+ Firma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağlık ve Kozmetik -->
+      <div class="sector-card">
+        <div class="sector-header">
+          <div class="sector-icon">💊</div>
+          <div>
+            <div class="sector-title">Sağlık ve Kozmetik</div>
+            <div class="sector-subtitle">Medikal Cihazlar & Doğal Kozmetik</div>
+          </div>
+        </div>
+        <div class="sector-content">
+          <div class="sector-description">
+            Medikal cihazlar, doğal kozmetik ürünleri ve sağlık teknolojileri için regülasyon uyumluluğu ve pazar giriş stratejileri.
+          </div>
+          <div class="sector-stats">
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>45+ Ülke</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>120+ Firma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elektronik ve Teknoloji -->
+      <div class="sector-card">
+        <div class="sector-header">
+          <div class="sector-icon">📱</div>
+          <div>
+            <div class="sector-title">Elektronik ve Teknoloji</div>
+            <div class="sector-subtitle">IoT Cihazları & Yazılım Çözümleri</div>
+          </div>
+        </div>
+        <div class="sector-content">
+          <div class="sector-description">
+            IoT cihazları, yazılım çözümleri ve teknoloji ürünleri için dijital pazarlama ve global teknoloji ekosistemine entegrasyon.
+          </div>
+          <div class="sector-stats">
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>55+ Ülke</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"></div>
+              <span>100+ Firma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- HANGİ SEKTÖRLERDE VARIZ BÖLÜMÜ BİTİŞ -->
+
 </body>
 </html>
